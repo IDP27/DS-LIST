@@ -2,7 +2,7 @@ package com.superior.dslist.Dto;
 
 import com.superior.dslist.entities.Game;
 
-public class GameMinDTO {
+public class GameMinDTO { // Classe DTO (Data Transfer Object) para transferir dados de jogos de forma simplificada
 
     private Long id;
     private String title;
