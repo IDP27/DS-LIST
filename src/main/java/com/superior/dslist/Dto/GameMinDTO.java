@@ -1,5 +1,6 @@
 package com.superior.dslist.Dto;
 
+import com.superior.dslist.GameMinProjection;
 import com.superior.dslist.entities.Game;
 
 public class GameMinDTO { // Classe DTO (Data Transfer Object) para transferir dados de jogos de forma simplificada
@@ -20,6 +21,13 @@ public class GameMinDTO { // Classe DTO (Data Transfer Object) para transferir d
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
 
+    }
+    public GameMinDTO (GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {
