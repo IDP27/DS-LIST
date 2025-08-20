@@ -25,7 +25,7 @@ public class GameMinDTO { // Classe DTO (Data Transfer Object) para transferir d
     public GameMinDTO (GameMinProjection projection) {
         id = projection.getId();
         title = projection.getTitle();
-        year = projection.getYear();
+        year = projection.getGameYear();
         imgUrl = projection.getImgUrl();
         shortDescription = projection.getShortDescription();
     }
